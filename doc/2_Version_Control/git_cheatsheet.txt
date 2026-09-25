@@ -1,0 +1,16 @@
+git commit
+    creates commit created from the "checked out" commit
+git branch
+    creates a branched commit off of the "checked out" commit
+git checkout
+    sets the active commit
+git pull
+    retrieves the commit from the non-local repo
+git push
+    publishes your work to a different repo
+git merge
+    combines the active commit with specified commit
+git rebase
+    makes the current commit based off a different branch
+git fetch
+    grabs the non-local commit
