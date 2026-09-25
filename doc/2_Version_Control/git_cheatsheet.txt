@@ -14,3 +14,13 @@ git rebase
     makes the current commit based off a different branch
 git fetch
     grabs the non-local commit
+git add 
+    includes the file in the next commit
+git status
+    checks the status of the current 
+git log
+    opens the downloads directory to view commit history
+-u <remote> <branch>
+    allows you to access a non local branch
+git diff
+    lets you see the changes to your version
