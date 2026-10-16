@@ -3,7 +3,6 @@
  */
 
 #include <inttypes.h>
-
 #include <zephyr/kernel.h>
 #include <zephyr/sys/printk.h>
 
@@ -21,8 +20,18 @@ int main(void) {
   }
   LED_blink(LED0, LED_1HZ);
   // LED_set(LED0, LED_ON);
- 
+  LED_set(LED1, LED_ON);
+  uint8_t duty_cycle = 0;
   while (1) {
+    LED_pwm(LED2, LED_ON);
+
+    if(duty_cycle == 100) {
+      duty_cycle = 0;
+      LED_toggle(LED3);
+    }
+    else{
+      duty_cycle++;
+    }
     k_msleep(SLEEP_MS);
   }
   return 0;
